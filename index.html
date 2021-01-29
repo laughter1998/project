@@ -1,10 +1,38 @@
-안녕
-33
-44
-55
-777
-999
-11
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+            }
+        </style>
+        <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+        <ul id="sortable">
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+        </ul>
 
 
-1시 51분
+
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+        <script>
+            $(function() {
+                $("#sortable").sortable();
+                $("#sortable").disableSelection();
+            });
+
+
+
+
+        </script>
+    </body>
+</html>
